@@ -80,11 +80,6 @@
                     </div>
                     <!-- Фильтры -->
                         <div class="cmenu" style="display:block;">
-                        <div style="margin-bottom: 13px;">
-                        <div class="b-inputmargin-bottom: 13px;">
-    <input id="search-box" placeholder="Поиск..." style="padding: 5px;width: 100%;">
-    </div>
-    </div>
 
                         <ul>                      <li {if !$filter}class="selectedfillter"{/if}><a href="{url brand_id=null category_id=null keyword=null page=null filter=null}"><i class="fa fa-filter"></i> Все товары</a></li>
         <li {if $filter=='featured'}class="selectedfillter"{/if}><a href="{url keyword=null brand_id=null category_id=null page=null filter='featured'}"><i class="fa fa-filter"></i> Рекомендуемые</a></li>
@@ -105,6 +100,11 @@
                     <!--Правый блок-->
                     <div class="main-right">
                                                 {* Поиск *}
+    <div style="margin-bottom: 13px;">
+    <input id="search-box" placeholder="Поиск..." style="padding: 5px;width: 430px;margin-right: 10px;">
+    <div class="button button-flat">поиск</div>
+    </div>
+    {*поиск @*}
 
 {foreach $ssubcat as $c}
 
