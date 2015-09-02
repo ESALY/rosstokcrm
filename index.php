@@ -1,7 +1,7 @@
 <?PHP
 
 /**
- * Simpla CMS*
+ * Simpla CMS
  *
  * @copyright 	2011 Denis Pikusov
  * @link 		http://simp.la
