@@ -1,0 +1,81 @@
+.smartfilterlite{
+	margin:10px 0px 10px 0px;
+	font-size:12px;
+}
+.smartfilterlite .pproperty{
+	float:left;
+	margin-right:15px;
+}
+.smartfilterlite .pname{
+	display:block;
+	float:left;
+	padding-top:5px;
+}
+.smartfilterlite a.filter{
+	display:block;
+	float:left;
+	margin-left:5px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-moz-transition: box-shadow .2s ease;
+	-webkit-transition: box-shadow .2s ease;
+	transition: box-shadow .2s ease;
+}
+.smartfilterlite a.filter:hover{
+	-moz-box-shadow: 0 0 4px 0 #ceaa00;
+	-webkit-box-shadow: 0 0 4px 0 #ceaa00;
+	box-shadow: 0 0 4px 0 #ceaa00;
+}
+.smartfilterlite .lap,
+.smartfilterlite .rap{
+	display:block;
+	width:1px;
+	float:left;
+	height:25px;
+}
+.smartfilterlite .lap{
+	background:url("img/bg_left.png") 0px 0px no-repeat;
+}
+.smartfilterlite .cap{
+	display:block;
+	float:left;
+	height:19px;
+	padding:5px 5px 1px 5px;
+	background:url("img/bg_center.png") 0px 0px repeat-x;
+}
+.smartfilterlite .rap{
+	background:url("img/bg_right.png") 0px 0px no-repeat;
+}
+.smartfilterlite .pvalue{
+	display:block;
+	float:left;
+}
+.smartfilterlite .cross{
+	display:block;
+	float:left;
+	width:8px;
+	height:8px;
+	margin:4px 4px 4px 12px;
+	background:url("img/cross.png") 0px 0px no-repeat;
+}
+.smartfilterlite .full_clear{
+	display:block;
+	width:99px;
+	float:left;
+	height:19px;
+	color:white;
+	text-decoration:none;
+	padding:5px 0px 1px 7px;
+	background:url('img/full_clear.png') 0px 0px repeat-x;
+	-moz-border-radius:3px;
+	-khtml-border-radius:3px;
+	-moz-transition:box-shadow .2s ease;
+	-webkit-transition:box-shadow .2s ease;
+	transition:box-shadow .2s ease;
+}
+.smartfilterlite .full_clear:hover{
+	text-decoration:none;
+	-moz-box-shadow:0 0 4px 0 #A1A1A1;
+	-webkit-box-shadow:0 0 4px 0 #A1A1A1;
+	box-shadow:0 0 4px 0 #A1A1A1;
+}

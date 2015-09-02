@@ -1,0 +1,36 @@
+div.star-active
+{
+	cursor: pointer;
+}
+
+div.star-empty
+{
+	background-image: url('../images/empty.png');
+	width:15px;
+	height:15px;
+	overflow:hidden;
+}
+
+div.star-voted
+{
+	background-image: url('../images/voted.png');
+	width:15px;
+	height:15px;
+	overflow:hidden;
+}
+
+div.star-over
+{
+	background-image: url('../images/over.png');
+	width:15px;
+	height:15px;
+	overflow:hidden;
+}
+
+.vote-result{
+	display:none;
+}
+.iblock-vote{
+	width:145px;
+	float:left;
+}

@@ -1,0 +1,160 @@
+.quickbuy{
+	height:464px;
+	text-align:center;
+	border-top:1px solid #cecece;
+	border-bottom:1px solid #cecece;
+	margin-top:30px;
+}
+.quickbuy .quickbuy-title{
+	font-size:15px;
+	padding:9px 0;
+	font-weight:bold;
+	text-transform:uppercase;
+	border-right:1px solid #cecece;
+	border-bottom:1px solid #cecece;
+	border-left:1px solid #cecece;
+	background-position:0px 0px;
+	background-repeat:repeat-x;
+}
+.quickbuy .quickbuy-body{
+	padding:0px;
+	margin:0px;
+}
+.quickbuy .quickbuy-item{
+	width:229px;
+	min-width:229px;
+	height:395px;
+	display:inline-block;
+	padding:16px 10px;
+	margin:0px;
+	text-align:center;
+	border-right:1px solid #cecece;
+}
+.quickbuy .quickbuy-item-name{
+	height:38px;
+	overflow:hidden;
+}
+.quickbuy .quickbuy-item-name a{
+	font-weight:bold;
+	font-family:Arial;
+	text-decoration:none;
+}
+.quickbuy .quickbuy-item-name a:hover{
+	text-decoration:underline;
+}
+.quickbuy-item-image{
+	margin:40px 0px;
+	padding:0;
+	height:195px;
+}
+.quickbuy .quickbuy-item-timer{
+	padding-top:3px;
+	padding-bottom:9px;
+	text-align:center;
+}
+.quickbuy .quickbuy-item-timer-table{
+	margin:0 auto;
+	font-size:11px;
+}
+.quickbuy .quickbuy-item-timer-table td,
+.quickbuy .quickbuy-item-timer-table th{
+	text-align:center;
+}
+.quickbuy  .quickbuy-t-time td span{
+	font-size:16px;
+	font-weight:bold;
+
+}
+.quickbuy  .quickbuy-t-time td.quickbuy-td-empty{
+	border:0px;
+}
+.quickbuy .quickbuy-item-data{
+	display:none;
+}
+.quickbuy-time-dvoetochie{
+	padding:0 4px;
+	color:#999999;
+}
+
+.quickbuy-js-d,
+.quickbuy-js-h,
+.quickbuy-js-m,
+.quickbuy-js-s{
+	display:block;
+	width:38px;
+	color:black;
+	font-weight:bold;
+	padding:5px 2px 6px 6px;
+	letter-spacing:14px;
+	background-position:0px 0px;
+	background-repeat:no-repeat;
+}
+.quickbuy-quantity{
+	display:block;
+	width:38px;
+	color:white;
+	font-weight:bold;
+	padding:5px 2px 6px 6px;
+	letter-spacing:14px;
+	background-position:0px 0px;
+	background-repeat:no-repeat;
+}
+.quickbuy-t-names td{
+	color:#666666;
+}
+
+/* prices and discount */
+.quickbuy-prices-and-discount{
+	text-align:left;
+}
+.quickbuy-item-price-old{
+	font-size:15px;
+	color:#a1a1a1;
+	font-weight:bold;
+	text-decoration:line-through;
+}
+.quickbuy-item-price-new{
+	font-size:19px;
+	color:#3399cc;
+	font-weight:bold;
+}
+.quickbuy-item-discount{
+	width:220px;
+	padding-top:9px;
+	padding-bottom:9px;
+	font-size:15px;
+	font-weight:bold;
+	background-position:0px 0px;
+	background-repeat:no-repeat;
+	margin:11px auto;
+	margin-top:17px;
+	margin-bottom:9px;
+}
+/* /prices and discount */
+.quickbuy-prices-and-discount .lft-rght{
+	width:210px;
+	margin:0 auto;
+}
+.quickbuy-prices-and-discount .lft{
+	float:left;
+}
+.quickbuy-prices-and-discount .lft .price-old{
+	font-size:14px;
+	color:#3A3A3A;
+	text-decoration:line-through;
+	font-family:Arial;
+	font-weight:bold;
+	color:#9797A6;
+}
+.quickbuy-prices-and-discount .lft .price-new{
+	font-size:18px;
+	color:#11ABD9;
+	font-family:Arial;
+	font-weight:bold;
+	color:black;
+}
+.quickbuy-prices-and-discount .rght{
+	width:100px;
+	height:24px;
+	float:right;
+}

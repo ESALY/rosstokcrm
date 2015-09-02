@@ -1,0 +1,34 @@
+.basket_in_head_inner a.this_icon{
+	display:block;
+	width:56px;
+	height:47px;
+	float:left;
+	margin-right:2px;
+	background-position:0px 0px;
+	background-repeat:no-repeat;
+	margin-top:14px;	
+}
+.basket_in_head_inner a.this_icon:hover{
+	background-position:-56px 0px;
+	text-decoration:none;
+}
+.basket_in_head_inner a.link2basket{
+	color:white;
+	text-decoration:none;
+}
+.basket_in_head_inner a.link2basket:hover{
+	text-decoration:underline;
+}
+
+.basket_in_head_inner .note{
+	font-weight:bold;
+	font-size:13px;
+	padding:16px 0px 3px 0px;
+}
+.basket_in_head_inner .info,
+.basket_in_head_inner .info a{
+	font-size:11px;
+	padding:5px 0px 3px 0px;/*padding:0px 0px 3px 0px;*/
+	overflow:hidden;
+	color:black;
+}

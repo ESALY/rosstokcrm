@@ -1,0 +1,28 @@
+.mfeedback{
+	width:312px;
+	padding:15px 30px 30px 30px;
+}
+.mfeedback .mfeedback-icon{
+	width:274px;
+	height:205px;
+	margin:0 auto;
+	margin-bottom:15px;
+	background:url('img/icon.png') 0px 0px no-repeat;
+}
+.mfeedback .text_300,
+.mfeedback .textarea_300{
+	margin-bottom:10px;
+	resize:none;
+}
+.mfeedback .inputcaptcha{
+	width:110px;
+	float:right;
+}
+.mfeedback .smalltextinpopup{
+	font-size:12px;
+	margin:0px 0px 15px 0px;
+}
+.mfeedback .errortext,
+.mfeedback .notetext{
+	margin-bottom:15px;
+}

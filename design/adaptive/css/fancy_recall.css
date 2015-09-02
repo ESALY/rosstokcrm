@@ -1,0 +1,29 @@
+.mrecall{
+	width:312px;
+	padding:15px 30px 30px 30px;
+}
+.mrecall .mrecall-icon{
+	width:200px;
+	height:191px;
+	margin:0 auto;
+	margin-bottom:15px;
+	background:url('../images/icon.png') 0px 0px no-repeat;
+}
+.mrecall .text_300,
+.mrecall .textarea_300{
+	margin-bottom:10px;
+	resize:none;
+}
+.mrecall .inputcaptcha{
+	width:110px;
+	float:right;
+}
+.mrecall .smalltextinpopup{
+	line-height:21px;
+	font-size:12px;
+	margin:0px 0px 15px 0px;
+}
+.mrecall .errortext,
+.mrecall .notetext{
+	margin-bottom:15px;
+}

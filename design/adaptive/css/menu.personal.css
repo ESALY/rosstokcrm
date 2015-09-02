@@ -1,0 +1,30 @@
+.menu_personal{
+	margin-bottom:26px;
+	margin-top:10px;
+}
+.menu_personal .personal-tabsheader a{
+	 display:block;
+	 float:left;
+	 font-size:13px;
+	 padding:4px 10px 0px 0px;
+	 margin-right:5px;
+}
+.menu_personal .personal-tabsheader a span{
+	display:block;
+	float:left;
+}
+.menu_personal .personal-tabsheader a.incative span{
+	border-bottom:1px dashed #0399d9;
+}
+.menu_personal .personal-tabsheader a.incative:hover span.tabbg-center{
+	border-bottom:1px dashed white;
+}
+.menu_personal .personal-tabsheader a.incative span.tabbg-center{
+	padding:4px 1px 0px 1px;
+}
+.menu_personal .personal-tabsheader a.incative .tabbg-last{
+	margin-right:8px;
+}
+.menu_personal .personal-tabsheader a.tabbg .tabbg-last{
+	margin-right:8px;
+}

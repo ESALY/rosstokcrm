@@ -1,0 +1,41 @@
+.navigation{
+	padding-top:14px;
+	font-size:14px;
+}
+.navigation a{
+	text-decoration:none;
+}
+
+.navigation a:hover{
+	text-decoration:none;
+}
+.navigation-arrows{
+	float:left;
+}
+.navigation-pages{
+	margin:0 5px;
+	float:left;
+}
+.prev_arrow{
+	background:url('../images/arrow_left.png') 3px 3px no-repeat;
+}
+.prev_arrow_active{
+	background:url('../images/arrow_left_active.png') 3px 3px no-repeat;
+}
+.next_arrow{
+	background:url('../images/arrow_right.png') 2px 3px no-repeat;
+}
+.next_arrow_active{
+	background:url('../images/arrow_right_active.png') 2px 3px no-repeat;
+}
+
+.nav-current-page{
+	padding:4px 8px 3px 8px;
+	border:1px solid #cecece;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-khtml-border-radius:3px;
+}
+.navigation-pages a{
+	padding:0px 4px;
+}

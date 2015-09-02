@@ -1,0 +1,552 @@
+.autocomplete-w1 { position:absolute; top:0px; left:0px; margin: 11px 0px 0px 7px; /* IE6 fix: */ _background:none; _margin:1px 0 0 0; }
+	.autocomplete { border: 1px solid #CCC; background:#FFF; cursor:default; text-align:left; overflow-x:auto;  overflow-y: auto; margin:-6px 6px 6px -6px; /* IE6 specific: */ _height:350px;  _margin:0; _overflow-x:hidden; color: rgb(207, 207, 207); font-size: 13px;}
+	.autocomplete .selected { background: #FFFFFF; }
+	.autocomplete div { padding: 4px 13px; white-space:nowrap; cursor: pointer;}
+	.autocomplete strong { font-weight:normal; color: #414141; }
+
+
+/* @group Формы */
+input[type="text"],
+input[type="password"]
+{
+	width: 100%;
+	
+}
+.form
+{
+	width:400px;
+	margin-bottom: 20px;
+}
+.form textarea
+{
+	width:100%;
+	height:100px;
+	font-size: 18px;
+}
+.form label {
+	display:block;
+	font-size: 14px;
+}
+.form input[type="text"]{
+	display:block;
+	margin-bottom: 10px;
+	
+}
+
+/* @group Комментарии */
+.comment_list {
+	margin-top: 15px;
+	list-style: none;
+}
+.comment_list li {
+	padding-bottom: 15px;
+}
+.comment_header {
+	font-size: 18px;
+}
+.comment_header i {
+	font-weight: normal;
+	font-style: normal;
+	color: #878787;
+	font-size: 13px;
+}
+/* @end — Комментарии*/
+
+/* @group Форма отправки комментария */
+.comment_form {
+	background-color: #f3f3f3;
+	border: 1px solid #e0e0e0;
+	padding: 20px;
+	margin-top: 20px;
+	width: 90%;
+	overflow: hidden;
+	border-radius: 3px 3px 3px 3px;
+}
+.comment_form h2 {
+	margin-bottom: 0px;
+}
+.comment_form .comment_textarea {
+	width: 100%;
+	height: 100px;
+	font-size: 12px;
+	border: 1px solid #D9D9D9;
+    border-radius: 3px 3px 3px 3px;
+	
+}
+.comment_form label {
+	display: block;
+	float: left;
+	width: 100px;
+	font-size: 18px;
+	margin-top: 15px;
+}
+.comment_form .input_name {
+	font-size: 16px;
+	width: 250px;
+	margin-top: 15px;
+    border: 1px solid #D9D9D9;
+    border-radius: 3px 3px 3px 3px;
+	height: 30px;
+    line-height: 30px;
+}
+.comment_form .input_captcha {
+	float: left;
+	width: 150px;
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 15px;
+	height: 36px;
+	border: 1px solid #D9D9D9;
+    border-radius: 3px 3px 3px 3px;
+	line-height: 36px;
+}
+.comment_form .captcha, .cart_form .captcha {
+	float: left;
+	display: block;
+	margin-top: 15px;
+	margin-right: 10px;
+}
+.comment_form .button,
+.feedback_form .button,
+.register_form .button,
+.login_form .button{
+	float: right;
+	display: block;
+	margin-top: 10px;
+	margin-right: 0px;
+}
+/* @end — Форма отправки комментария */
+
+/* @group Форма отправки обратной связи */
+.feedback_form {
+	background-color: #f3f3f3;
+	border: 1px solid #e0e0e0;
+	padding: 20px;
+	margin-top: 20px;
+	width: 90%;
+	overflow: hidden;
+	border: 1px solid #D9D9D9;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.feedback_form  .comment_textarea {
+	width: 100%;
+	height: 100px;
+	font-size: 12px;
+	border: 1px solid #D9D9D9;
+    border-radius: 3px 3px 3px 3px;
+	
+}
+
+.feedback_form .input_name {
+	font-size: 16px;
+	
+	margin-top: 15px;
+    border: 1px solid #D9D9D9;
+    border-radius: 3px 3px 3px 3px;
+	height: 30px;
+    line-height: 30px;
+}
+
+
+.feedback_form .input_captcha, .register_form .input_captcha{
+	float: left;
+	width: 150px;
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 15px;
+	height: 40px;
+	border-radius: 3px 3px 3px 3px;
+	border: 1px solid #D9D9D9;
+}
+.feedback_form .captcha, .register_form .captcha{
+	float: left;
+	display: block;
+	margin-top: 15px;
+	margin-right: 10px;
+}
+.feedback_form .button_send {
+	font-size: 18px;
+	float: right;
+	margin-top: 25px;
+}
+/* @end — Форма отправки комментария */
+
+.cart_form .comment_textarea {
+	width: 100%;
+	height: 100px;
+	font-size: 12px;
+	border: 1px solid #D9D9D9;
+    border-radius: 3px 3px 3px 3px;
+	background-image: url("../images/textarea_fon.png");
+	
+}
+
+.cart_form .input_name {
+	font-size: 16px;
+	
+	margin-top: 15px;
+    border: 1px solid #D9D9D9;
+    border-radius: 3px 3px 3px 3px;
+	height: 30px;
+    line-height: 30px;
+	background-image: url("../images/inp_fon.png");
+}
+
+.cart_form .input_captcha{
+	float: left;
+	width: 150px;
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 15px;
+	height: 36px;
+	border: 1px solid #D9D9D9;
+    border-radius: 3px 3px 3px 3px;
+	line-height: 36px;
+	background-image: url("../images/textarea_fon.png");
+}
+
+
+.register_form .comment_textarea {
+	width: 100%;
+	height: 100px;
+	font-size: 12px;
+	border: 1px solid #D9D9D9;
+    border-radius: 3px 3px 3px 3px;
+	background-image: url("../images/textarea_fon.png");
+	
+}
+
+.register_form .input_name {
+	font-size: 16px;
+	
+	margin-top: 15px;
+    border: 1px solid #D9D9D9;
+    border-radius: 3px 3px 3px 3px;
+	height: 30px;
+    line-height: 30px;
+	background-image: url("../images/inp_fon.png");
+}
+
+.register_form .input_captcha{
+	float: left;
+	width: 150px;
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 15px;
+	height: 36px;
+	border: 1px solid #D9D9D9;
+    border-radius: 3px 3px 3px 3px;
+	line-height: 36px;
+	background-image: url("../images/textarea_fon.png");
+}
+
+
+.password_remind_form .input_name {
+	font-size: 16px;
+	margin-top: 15px;
+    border: 1px solid #D9D9D9;
+    border-radius: 3px 3px 3px 3px;
+	height: 30px;
+    line-height: 30px;
+	background-image: url("../images/inp_fon.png");
+}
+
+.login_form .input_name {
+	font-size: 16px;
+	margin-top: 15px;
+    border: 1px solid #D9D9D9;
+    border-radius: 3px 3px 3px 3px;
+	height: 30px;
+    line-height: 30px;
+	background-image: url("../images/inp_fon.png");
+}
+
+.user_form .input_name {
+	font-size: 16px;
+	margin-top: 15px;
+    border: 1px solid #D9D9D9;
+    border-radius: 3px 3px 3px 3px;
+	height: 30px;
+    line-height: 30px;
+	background-image: url("../images/inp_fon.png");
+}
+
+/* @group Корзина */
+#purchases{
+	width: 100%;
+}
+#purchases tr{
+	border-top: 1px solid #d5d5d5;
+	height: 70px;
+}
+#purchases th{
+	vertical-align: top;
+	padding-top: 10px;
+	font-size: 18px;
+	font-weight: normal;
+}
+#purchases .image{
+	width: 50px;
+	text-align: center;
+}
+#purchases .image a{
+	border: 1px solid #e0e0e0;
+	background-color: #ffffff;
+	margin: 0 7px 7px 0;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+}
+
+#purchases .name{
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: left;
+}
+#purchases td.name{
+	font-size: 14px;
+}
+#purchases td .download_attachment{
+	white-space: nowrap;
+	color: #3b8500;
+	padding: 5px 10px 7px 10px;
+	border-bottom-color: 1px dotted green;
+	background-color: #ccff72;
+	line-height: 30px;
+}
+
+#purchases .price{
+	padding-left: 5px;
+	padding-right: 5px;
+	white-space: nowrap;
+	text-align: right;
+}
+#purchases td.price{
+	font-size: 14px;
+}
+#purchases .remove{
+	padding-left: 15px;
+	text-align: right;
+}
+#purchases .amount{
+	font-size: 14px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#purchases .amount select{
+	font-size:12px;
+}
+
+#purchases .coupon .name{
+	font-size:14px;
+}
+#purchases .coupon .name input.coupon_code{
+	width: 200px;
+}
+#purchases .coupon .name input{
+	font-size:16px;
+}
+
+ul#deliveries{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #ffffff;
+	border: 1px solid #e0e0e0;
+	padding: 20px 20px 0 20px;
+	list-style: none;
+}
+ul#deliveries li{
+	margin-bottom: 20px;
+}
+ul#deliveries li div.checkbox{
+	float: left;
+}
+ul#deliveries li h3, ul#deliveries li .description{
+	display: block;
+	margin-left: 25px;
+}
+/* @end */
+
+
+/* @group Кабинет */
+#orders_history
+{
+	list-style: none;
+}
+#orders_history li
+{
+	margin-bottom: 10px;
+}
+#orders_history li a
+{
+	font-size: 16px;
+}
+/* @end — Кабинет */
+
+
+
+/* @group Детали заказа */
+table.order_info
+{
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background-color: #f9f9f9;
+}
+table.order_info td
+{
+	padding: 10px;
+	border: 1px dotted #e0e0e0;
+	font-size: 14px;
+}
+.checkout_button
+{
+	padding: 10px 20px 10px 20px;
+	border: 1px solid #51a400;
+	background-color: #d3ffa9;
+	color: #2e5e00;
+	font-size: 14px;
+}
+/* @end */
+
+
+/* Сообщение с ошибкой */
+.message_error{
+	clear: both;
+	height: 18px;
+	padding: 10px 20px;
+	margin-bottom: 15px;
+	margin-top: 10px;
+	overflow: hidden;
+	color: red;
+	background-color: #ffcaca;
+	border: 1px dotted #ff4545;
+}
+
+/* @end */
+
+/* Поиск */
+
+#search {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+#field {
+    float:left; 
+    width: 864px; 
+    height:27px; 
+    line-height:27px;
+    text-indent:10px; 
+    font-family:arial, sans-serif; 
+    font-size:22px; 
+    color:#333; 
+    background: #fff; 
+    border:solid 1px #d9d9d9; 
+    border-top:solid 1px #c0c0c0; 
+    border-right:none;
+    outline: none;
+}
+
+#delete {
+    float:left; 
+    width:16px;
+    height:29px; 
+    line-height:23px; 
+    margin-right:15px; 
+    padding:0 10px 0 10px;
+    font-family: "Lucida Sans", "Lucida Sans Unicode",sans-serif;
+    font-size:22px; 
+    background: #fff;  
+    border:solid 1px #d9d9d9; 
+    border-top:solid 1px #c0c0c0; 
+    border-left:none;
+}
+
+#delete #x {
+    color:#A1B9ED; 
+    cursor:pointer;
+    display:none;
+}
+
+#delete #x:hover {
+    color:#36c;
+}
+
+#submit {
+    cursor:pointer; 
+    width:70px; 
+    height: 29px; 
+    line-height:0; 
+    font-size:0; 
+    text-indent:-999px;
+    color: transparent;  
+    background: url("../images/search.png") no-repeat #4d90fe center; 
+    border: 1px solid #3079ED; 
+    -moz-border-radius: 2px; 
+    -webkit-border-radius: 2px; 
+}
+
+#submit:hover {
+    background: url("../images/search.png") no-repeat center #357AE8; 
+    border: 1px solid #2F5BB7;
+}
+
+.search-before {
+float: left;
+margin-right: 15px;
+margin-top: 5px;
+}
+
+
+/*Блок категорий колонками @start*/
+.text_3ColBlock {
+    padding-bottom:20px;
+    /*отступ снизу*/
+    width:100%;
+    /*указываем общую ширину блока с колонками*/
+    text-align:left;
+    /*выравнивание текста внутри колонок*/
+    column-count: 3;
+    /*количество колонок, на которое хотим разбить текст*/
+    -moz-column-count: 3;
+    /*для мозилы*/
+    -webkit-column-count: 3;
+    /*для webkit браузеров*/
+    column-gap: 40px;
+    /*отступ между колонками*/
+    -moz-column-gap: 40px;
+    -webkit-column-gap: 40px;
+    column-rule: 1px solid #000;
+    /*если требуется по дизайну, разделяем колонки линией*/
+    -moz-column-rule: 1px solid #000;
+    -webkit-column-rule: 1px solid #000;
+}
+.text_3ColBlock span {
+    display:block;
+    margin-bottom:5px;
+}
+
+.text_3ColBlock a {
+display:block;
+    height:auto;
+}
+.text_3ColBlock span:before {
+    content:"";
+    margin-right:5px;
+    float:left;
+}
+
+.text_3ColBlock .last {
+    margin-top:20px;
+    border-radius:10px;
+    border:dotted 1px blue;
+    padding:10px;
+}
+/*Блок категорий колонками @end*/

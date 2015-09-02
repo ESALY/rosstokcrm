@@ -1,0 +1,221 @@
+.smartfilter li.lvl2_disabled {
+	color: #9b9b9b !important;
+	text-shadow: none !important;
+}
+
+.smartfilter h5, .smartfilter p, .smartfilter ul, .smartfilter li {
+	background: none repeat scroll 0 0 transparent;
+	border: 0 none;
+	font-size: 100%;
+	margin: 0;
+	outline: 0 none;
+	padding: 0;
+	vertical-align: baseline;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.smartfilter .filtren, .smartfilter .vieweditems {
+	width:227px;
+}
+.smartfilter .filtren{
+	position:relative;
+	font-size:12px;
+	margin-right:20px;
+	border:1px solid #cecece;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-khtml-border-radius:5px;
+}
+.smartfilter .filtren h5 {
+	font-size: 15px;
+	margin-bottom: 23px;
+	text-shadow: 0 1px 1px #FFFFFF;
+}
+.smartfilter .filtren td {
+	padding-right:0px;
+}
+.smartfilter #del_filter, .smartfilter #set_filter {
+	margin:5px 0px;
+}
+.smartfilter ol, .smartfilter ul {
+	list-style: none outside none;
+}
+.smartfilter li {
+	list-style: none outside none;
+}
+.smartfilter li.lvl1{
+	border-bottom:1px solid #cecece;
+	padding:16px 19px 16px 19px;
+}
+.smartfilter .filtren > ul > li > a {
+	border-bottom:1px dotted;
+	font-size:12px;
+	text-decoration:none;
+	font-weight:bold;
+	color:#1FAFDB;
+	float:left;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.smartfilter .filtren > ul > li > span.bhfilter-prop-name-plus,
+.smartfilter .filtren > ul > li > span.bhfilter-prop-name-minus{
+	width:14px;
+	display:block;
+	float:left;
+}
+.smartfilter .filtren > ul > li > span.bhfilter-prop-name-plus{
+	background:url("img/plus.png") 3px 7px no-repeat;
+}
+.smartfilter .filtren > ul > li > span.bhfilter-prop-name-minus{
+	background:url("img/minus.png") 3px 7px no-repeat;
+}
+.smartfilter .filtren ul > li > ul {
+	overflow:hidden;
+	margin-top:6px;
+	padding-bottom:5px;
+}
+.smartfilter .filtren .ecke {
+	border-right: 1px solid #8BBECB;
+	border-top: 1px solid #8BBECB;
+	box-shadow: 2px -1px 4px -1px rgba(0, 0, 0, 0.2);
+	display: block;
+	height: 10px;
+	margin-top: -5px;
+	position: absolute;
+	right: -7px;
+	top: 50%;
+	width: 10px;
+}
+.lvl2_checkbox{
+	position:absolute;
+	left:-10000px;
+	width:0px;
+	height:0px;
+	margin:0px;
+	padding:0px;
+}
+.smartfilter .filtren li.lvl2{
+	display:block;
+	margin-top:1px;
+}
+.smartfilter .filtren li.lvl2 label{
+	display:block;
+	height:15px;
+	cursor:pointer;
+	padding:5px 8px 5px 8px;
+}
+.smartfilter .filtren li.lvl2 label span{
+	padding:0px 0px 2px 0px;
+	border-bottom:1px dashed #7f7f7f;
+}
+.smartfilter .filtren li.lvl2:hover > label > span{
+	border-bottom:1px dashed white;
+}
+.smartfilter .filtren li.lvl2 label.label_checked span{
+	border-bottom:0px !important;
+	padding:0px 0px 4px 0px !important;
+}
+.smartfilter li.clear_all{
+	margin-top:5px;
+	background:url("img/bg_clear_li_checked.png") 0px 0px no-repeat;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-khtml-border-radius:3px;
+	-moz-transition:box-shadow .2s ease;
+	-webkit-transition:box-shadow .2s ease;
+	transition:box-shadow .2s ease;
+}
+.smartfilter li.clear_all a{
+	display:block;
+	height:15px;
+	cursor:pointer;
+	padding:5px 8px 5px 8px;
+}
+.smartfilter li.clear_all a:hover{
+	text-decoration:none;
+}
+.smartfilter li.clear_all:hover{
+	-moz-box-shadow: 0 0 4px 0 #A1A1A1;
+	-webkit-box-shadow: 0 0 4px 0 #A1A1A1;
+	box-shadow: 0 0 4px 0 #A1A1A1;
+}
+.smartfilter li.clear_all a span{
+	color:white;
+	padding:0px 0px 3px 0px;
+}
+.in_price_block_padding{
+	height:6px;
+}
+.smartfilter .filtren .li_checked{
+	background:url("img/bg_li_checked.png") 0px 0px no-repeat;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-khtml-border-radius:3px;
+	-moz-transition:box-shadow .2s ease;
+	-webkit-transition:box-shadow .2s ease;
+	transition:box-shadow .2s ease;
+}
+.smartfilter .filtren .li_checked:hover{
+	-moz-box-shadow: 0 0 4px 0 #ceaa00;
+	-webkit-box-shadow: 0 0 4px 0 #ceaa00;
+	box-shadow: 0 0 4px 0 #ceaa00;
+}
+span.prs_text{
+	padding-top:6px;
+	display:block;
+	float:left;
+	font-size:12px;
+}
+span.prs{
+	display:block;
+	float:left;
+	width:67px;
+	height:25px;
+	background:url("img/inp_bg_prs.png") 0px 0px repeat-x;
+	border:1px solid #d7d7d7;
+	border-radius:4px;
+	-moz-border-radius:4px; 
+	-khtml-border-radius:4px;
+}
+.smartfilter .min-price,
+.smartfilter .max-price{
+	padding: 3px 0 0 5px;
+	border: 0px;
+	background: transparent;
+	font-size: 12px;
+}
+
+.smartfilter .smartbuttons{
+	text-align:center;
+}
+
+.smartfilter .filtren .modef{
+	position:absolute;
+	min-width:300px;
+	top:-5px;
+	left:222px;
+	white-space:nowrap;
+	z-index:210;
+}
+.smartfilter .filtren .modef .bhfilter-littlepopup-lp{
+	float:left;
+	width:21px;
+	height:44px;
+	background:url('img/popup_lp.png') 0 0 no-repeat;
+}
+.smartfilter .filtren .modef .bhfilter-littlepopup-cp{
+	float:left;
+	padding-top:12px;
+	height:32px;
+	background:url('img/popup_cp.png') 0 0 repeat-x;
+}
+.smartfilter .filtren .modef .bhfilter-littlepopup-cp a{
+	font-weight:bold;
+	text-decoration:underline;
+}
+.smartfilter .filtren .modef .bhfilter-littlepopup-rp{
+	float:left;
+	width:15px;
+	height:44px;
+	background:url('img/popup_rp.png') 0 0 no-repeat;
+}

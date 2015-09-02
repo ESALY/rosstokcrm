@@ -1,0 +1,232 @@
+.search_in_header{
+	float:right;
+	margin:8px 0px 0px 20px;
+	font-size:12px;
+}
+.search_in_header-sample{
+	float:left;
+	color:black;
+	margin:6px 15px 0px 0px;
+}
+.search_in_header-input .image{
+	float:left;
+	width:12px;
+	height:12px;
+	margin:8px 10px 8px 10px;
+	background:url('../images/search_lupa.png') 0 0 no-repeat;
+}
+.search_in_header-sample a{
+	color:black;
+	text-decoration:none;
+	border-bottom:1px dashed;
+}
+.search_in_header-sample a:hover{
+	text-decoration:none;
+	border-bottom:0px;
+}
+.search_in_header-input{
+	float:left;
+	width:282px;
+	height:28px;
+	background:url('../images/search_bg.png') 0 0 no-repeat;
+}
+.search_in_header-input input.text{
+	width:160px;
+	float:left;
+	color:black;
+	margin:5px 10px 5px 0px;
+	border:0px;
+	background:transparent;
+}
+.search_in_header-input input.submit{
+	display:block;
+	float:right;
+	width:64px;
+	height:28px;
+	border:0px;
+	cursor:pointer;
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+	background-color:transparent;
+	background-image:url('../images/search_btn.png');
+}
+.search_in_header-input input.submit:hover{
+	background-position:-64px 0px;
+}
+
+div.title-search-result {
+	border:1px solid #c6c6c6;
+	display:none;
+	overflow:hidden;
+	z-index:350;
+	background-color:white;
+	*margin-top:-30px;
+}
+:root div.title-search-result{
+	margin-left:-5px\0/IE9;;
+}
+
+table.title-search-result {
+	border-collapse: collapse;
+	border:none;
+	width:10%;
+}
+
+table.title-search-result th {
+	border-right:1px solid #e8e8e8;
+	color:#949494;
+	font-weight:normal;
+	padding-top:2px;
+	padding-bottom:2px;
+	padding-left:14px;
+ 	padding-right:12px;
+	text-align:right;
+	vertical-align:top;
+	white-space:nowrap;
+	width:1%;
+}
+
+table.title-search-result td {
+	background-color:white;
+	color:black;
+	font-weight:normal;
+	padding-top:2px;
+	padding-bottom:2px;
+	text-align:left;
+	white-space:nowrap;
+}
+
+table.title-search-result td.title-search-item {
+	padding-left:8px;
+	padding-right:15px;
+}
+
+table.title-search-result td.title-search-item a {
+	padding-left:4px;
+	padding-right:15px;
+	text-decoration: none;
+	color:black;
+	vertical-align:top;
+}
+
+table.title-search-result td.title-search-item img {
+	vertical-align:top;
+}
+
+table.title-search-result td.title-search-item b {
+	color:#cf0000;
+	font-weight:normal;
+}
+
+table.title-search-result tr.title-search-selected td
+,table.title-search-result tr.title-search-selected a
+,table.title-search-result tr.title-search-selected td.title-search-more a
+{
+	/*background-color:#fff2be;*/
+}
+
+table.title-search-result td.title-search-more {
+	font-size:11px;
+	font-weight:normal;
+	padding-right:15px;
+	padding-left:24px;
+	padding-top:0px;
+}
+
+table.title-search-result td.title-search-more a
+{
+	padding-left:12px;
+	padding-right:15px;
+	text-decoration:none;
+	color:#999999;
+}
+
+table.title-search-result td.title-search-all {
+	padding-left:24px;
+	padding-right:15px;
+}
+
+table.title-search-result td.title-search-all a
+{
+	padding-left:4px;
+	text-decoration:none;
+	color:#808080;
+}
+
+table.title-search-result td.title-search-separator
+, table.title-search-result th.title-search-separator {
+	padding-top:0px;
+	padding-bottom:0px;
+	font-size:4px;
+}
+
+div.title-search-fader {
+	display:none;
+	background-image: url('images/fader.png');
+	background-position: right top;
+	background-repeat: repeat-y;
+	position:absolute;
+}
+.popup-search-item{
+	padding:10px 20px 10px 20px;
+	width:250px;
+}
+.popup-search-item-img{
+	float:left;
+	max-height:60px;
+	margin-right:20px;
+	height:60px;
+}
+.popup-search-item-body{
+	font-size:12px;
+	line-height: 18px;
+	margin-top:3px;
+}
+.popup-search-item-body .name{
+	font-size:12px;
+}
+.popup-search-item-body .price{
+	font-size:14px;
+}
+.popup-search-news-h1{
+	font-size:11px;
+	margin-top:10px;
+	text-align:center;
+	color:#b5b5b5;
+	text-transform:uppercase;
+}
+
+
+.popup-search-news-item{
+	padding:5px 20px 5px 20px;
+	width:250px;
+}
+.popup-search-news-item-name{
+	margin-bottom:10px;
+	font-size:12px;
+}
+.title-search-result hr {
+    background-color: #CECECE;
+    border: 0 none;
+    height: 1px;
+    width: 100%;
+}
+td.no_hover h1 {
+    position: relative;
+    margin-top: 0px;
+	font-size:11px;
+	text-align:center;
+	color:#b5b5b5;
+	text-transform:uppercase;
+}
+td.no_hover h1.two span {
+    background: #fff;
+    padding: 0 10px;
+    position: relative;
+    z-index: 5;
+}
+td.no_hover h1.two+p {
+    border-top: solid 1px #CECECE;
+    padding-top: 7px;
+    margin-top: -7px;
+}

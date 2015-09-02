@@ -1,0 +1,49 @@
+.we_recc{
+	width:247px;
+	height:297px;
+	background-color:#FFFFFF;
+	border:1px solid #EDAA00;
+}
+.we_recc-title{
+	font-size:15px;
+	padding:9px 0;
+	font-weight:bold;
+	text-align:center;
+	text-transform:uppercase;
+	border-bottom:1px solid #EDAA00;
+	background-position:0px 0px;
+	background-repeat:repeat-x;
+}
+
+.we_recc-item_inner{
+	width:200px;
+	float:left;
+	margin:15px 24px;
+}
+.we_recc-item-pic{
+	width:80px;
+	height:90px;
+	float:left;
+	margin-right:10px;
+	text-align:center;
+}
+.we_recc-item-body{
+	float:left;
+	width:100px;
+	height:90px;
+	padding-top:10px;
+}
+.we_recc-item-name{
+	width:105px;
+	height:50px;
+	line-height:22px;
+	font-size:14px;
+	overflow:hidden;
+}
+
+.we_recc-line{
+	width:196px;
+	height:1px;
+	margin-left:25px;
+	background-color:#cecece;
+}

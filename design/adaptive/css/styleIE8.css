@@ -1,0 +1,29 @@
+input.jq-checkbox{
+    left: -10000px;
+    position: absolute;
+}
+label.jq-checkbox{
+	background: url(../images/check_dis.png) scroll 0px 0px no-repeat transparent;
+	padding-left:19px;
+	vertical-align: baseline;
+	cursor:pointer;
+    
+}
+label.jq-checkbox.checked{
+    background:url(../images/check.png) no-repeat scroll 0 0 transparent;
+}
+
+input.jq-radio{
+    left: -10000px;
+    position: absolute;
+}
+label.jq-radio{
+	background: url(../images/radio.png) scroll 0px 0px no-repeat transparent;
+	padding-left:19px;
+	vertical-align: baseline;
+	cursor:pointer;
+    
+}
+label.jq-radio.checked{
+    background:url(../images/radio_active.png) no-repeat scroll 0 0 transparent;
+}

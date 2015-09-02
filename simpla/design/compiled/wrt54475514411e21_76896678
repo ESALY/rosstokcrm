@@ -1,0 +1,94 @@
+<?php /* Smarty version Smarty-3.1.18, created on 2014-10-22 10:56:20
+         compiled from "simpla/design/html/dashboard.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:17108141745440f05c6f8e23-60626008%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '98f4b3b99c629e5e532c93b1e5d500de8e37e90d' => 
+    array (
+      0 => 'simpla/design/html/dashboard.tpl',
+      1 => 1413960974,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '17108141745440f05c6f8e23-60626008',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.18',
+  'unifunc' => 'content_5440f05c89b5a0_21209154',
+  'variables' => 
+  array (
+    'group' => 0,
+    'groups' => 0,
+    'g' => 0,
+    'filter_groups' => 0,
+    'filter_citys' => 0,
+    'city' => 0,
+    'filter_managers' => 0,
+    'manager' => 0,
+  ),
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5440f05c89b5a0_21209154')) {function content_5440f05c89b5a0_21209154($_smarty_tpl) {?><?php $_smarty_tpl->tpl_vars['wrapper'] = new Smarty_variable('dashboard-wrapper.tpl', null, 1);
+if ($_smarty_tpl->parent != null) $_smarty_tpl->parent->tpl_vars['wrapper'] = clone $_smarty_tpl->tpl_vars['wrapper'];?>
+
+	<div class="middle">
+
+        <div class="container">
+            <main class="content">
+            <div class="search">	</div>
+            7777777777777777777777777
+            </main><!-- .content -->
+        </div><!-- .container-->
+
+        <aside class="left-sidebar">
+           		<ul>
+		<li <?php if (!$_smarty_tpl->tpl_vars['group']->value->id) {?>class="selected"<?php }?>><a href='index.php?module=UsersAdmin'>Все группы</a></li>
+	</ul>
+	<!-- Группы -->
+	<?php if ($_smarty_tpl->tpl_vars['groups']->value) {?>
+
+	<ul>
+		<?php  $_smarty_tpl->tpl_vars['g'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['g']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['groups']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['g']->key => $_smarty_tpl->tpl_vars['g']->value) {
+$_smarty_tpl->tpl_vars['g']->_loop = true;
+?>
+		<li <?php if ($_smarty_tpl->tpl_vars['group']->value->id==$_smarty_tpl->tpl_vars['g']->value->id) {?>class="selected"<?php }?>><input type="checkbox" name="option3" value="<?php echo $_smarty_tpl->tpl_vars['g']->value->name;?>
+"><a href="index.php?module=UsersAdmin&group_id=<?php echo $_smarty_tpl->tpl_vars['g']->value->id;?>
+"><?php echo $_smarty_tpl->tpl_vars['g']->value->name;?>
+</a></li>
+		<?php } ?>
+	</ul>
+	<?php }?>
+
+	<ul>
+	<h3>Категории</h3>
+	<?php  $_smarty_tpl->tpl_vars['g'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['g']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['filter_groups']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['g']->key => $_smarty_tpl->tpl_vars['g']->value) {
+$_smarty_tpl->tpl_vars['g']->_loop = true;
+?>
+		<li><input type="checkbox" name="option3" value="a3"><a href=""><?php echo $_smarty_tpl->tpl_vars['g']->value;?>
+</a></li>
+	<?php } ?>
+	</ul>
+
+	<ul>
+	<h3>Города</h3>
+	<?php  $_smarty_tpl->tpl_vars['city'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['city']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['filter_citys']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['city']->key => $_smarty_tpl->tpl_vars['city']->value) {
+$_smarty_tpl->tpl_vars['city']->_loop = true;
+?>
+		<li><input type="checkbox" name="option3" value="a3"><a href=""><?php echo $_smarty_tpl->tpl_vars['city']->value;?>
+</a></li>
+	<?php } ?>
+	</ul>
+
+
+	<ul><h3>Менеджеры</h3>
+	<?php  $_smarty_tpl->tpl_vars['manager'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['manager']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['filter_managers']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['manager']->key =

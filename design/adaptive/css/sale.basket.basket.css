@@ -1,0 +1,114 @@
+/*Table*/
+table.sale_basket_basket
+{
+	width:100%;
+	border-collapse:collapse;
+	font-size:12px;
+	border:1px solid #CECECE;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-khtml-border-radius:5px;
+}
+
+/*Table head*/
+table.sale_basket_basket th 
+{
+	background-repeat:repeat-x;
+	text-align: left;
+	font-size:14px;
+	color:#000000;
+	border:1px solid #CECECE;
+	text-align:center;
+}
+table.sale_basket_basket tr{
+	background-position:0;
+	background-repeat:repeat-x;
+}
+
+/* Table cells and heads*/
+table.sale_basket_basket th, table.sale_basket_basket td
+{
+	padding:10px 15px;
+	vertical-align:top;
+}
+table.sale_basket_basket td{
+	border-bottom:0px;
+	vertical-align:middle;
+}
+table.sale_basket_basket tr.bottom_tr_color{
+	background:#ffe980;
+}
+/*---------ie-------------*/
+.bottom_table .btn2_220_full{
+	margin-left:7px\0/;
+}
+.bottom_table .btn2_220_full:hover{
+	margin-left:7px\0/;
+}
+/*------------------------*/
+table.bottom_table td{
+	vertical-align:top;
+}
+table.bottom_table .text_100{
+	width:208px;
+	margin-bottom:5px;
+	margin-right:5px;
+}
+table.bottom_table .btn2_220_full{
+	margin-left:8px;
+}
+table.sale_basket_basket tr.bottom_tr_color td{
+	border:0px;
+	border-top:1px solid #CECECE;
+}
+table.sale_basket_basket .quantity  .cell{
+	width:90px;
+}
+table.sale_basket_basket .quantity  input{
+	text-align:center;
+}
+table.sale_basket_basket .quantity .minus,
+table.sale_basket_basket .quantity .plus{
+	float:left;
+	width:11px;
+	height:11px;
+	display:block;
+	cursor:pointer;
+	margin-top:7px;
+	
+}
+table.sale_basket_basket .quantity .minus{
+	
+	background:url(../images/basket/minus.png) no-repeat scroll 0 5px transparent;
+	margin-right:4px;
+}
+table.sale_basket_basket .quantity .plus{
+	
+	background:url(../images/basket/plus.png) no-repeat scroll 0 0 transparent;
+	margin-left:4px;
+}
+
+table.sale_basket_basket .quantity .value{
+	display:block;
+	float:left;
+}
+table.sale_basket_basket .basket-article{
+	color: #666666;
+    font-size: 10px;
+    height: 12px;
+    text-align: center;
+}
+
+.basket-accessories .cat_blck{
+	margin-right:-1px;
+}
+
+.by1clickbasket,
+.by1clickbasket span{
+	display:block;
+}
+.by1clickbasket span{
+	line-height:21px;
+	padding:6px;
+	text-align:center;
+}

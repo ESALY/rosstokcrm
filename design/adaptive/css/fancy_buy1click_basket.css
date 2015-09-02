@@ -1,0 +1,29 @@
+.mbuy1click{
+	width:312px;
+	padding:15px 30px 30px 30px;
+}
+.mbuy1click .mbuy1click-icon{
+	width:254px;
+	height:148px;
+	margin:0 auto;
+	margin-bottom:15px;
+	background:url('../images/icon2.png') 0px 0px no-repeat;
+}
+.mbuy1click .text_300,
+.mbuy1click .textarea_300{
+	margin-bottom:10px;
+	resize:none;
+}
+.mbuy1click .inputcaptcha{
+	width:110px;
+	float:right;
+}
+.mbuy1click .smalltextinpopup{
+	line-height:21px;
+	font-size:12px;
+	margin:0px 0px 15px 0px;
+}
+.mbuy1click .errortext,
+.mbuy1click .notetext{
+	margin-bottom:15px;
+}

@@ -1,0 +1,25 @@
+.rater>SPAN
+{
+	vertical-align: top;
+}
+.rater-rating
+{
+	margin-left: 0.8em;
+}
+.rater-starsOff, .rater-starsOn
+{
+	display: inline-block;
+	height: 16px;
+	background: url(../images/rating.gif) repeat-x 0 0px;
+}
+.rater-starsOn
+{
+	display: block;
+	max-width: 80px;
+	top: 0;
+	background-position: 0 -16px;
+}
+.rater-starsHover
+{
+	background-position: 0 -32px !important;
+}

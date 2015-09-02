@@ -1,0 +1,120 @@
+.cat_blck{
+	border-top:1px solid #cecece;
+	border-left:1px solid #cecece;
+}
+.cat_blck .cat_blck-item-simple{
+	position:relative;
+	float:left;
+	-moz-transition:box-shadow .2s ease;
+	-webkit-transition:box-shadow .2s ease;
+	transition:box-shadow .2s ease;
+}
+.cat_blck .cat_blck-item-simple{
+	height:298px;
+	border-right:1px solid #cecece;
+	border-bottom:1px solid #cecece;
+	width: 249px;
+	min-width:230px;
+}
+
+.cat_blck-item_inner{
+	padding:0px 16px;
+	
+}
+.cat_blck-item-article{
+	height:12px;
+}
+.cat_blck-item-name{
+	margin-top:15px;
+	height:36px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.cat_blck-item-name a{
+	display:block;
+	width:219px;
+	font-size:15px;
+	font-weight:bold;
+	text-align:center;
+}
+.cat_blck-item-picture{
+	width:219px;
+	height:175px;
+	text-align:center;
+	margin-top:10px;
+	margin-bottom:5px;
+	vertical-align: middle;
+	display: table-cell;
+}
+.cat_blck-item-price{
+	width:219px;
+}
+.cat_blck-item-price .old_price{
+	font-size:12px;
+	font-weight:bold;
+}
+.cat_blck-item-price-buybtn{
+	float:right;
+}
+.add2basket_baton,
+.add2basket_areadyin{
+	margin-top:11px;
+}
+
+/* description */
+.cat_blck-item-description_small{
+	margin-top:5px;
+	height:80px;
+	overflow:hidden;
+}
+.cat_blck-item-description_normal{
+	margin-top:10px;
+	overflow:hidden;
+}
+.cat_blck-item-description{
+	font-size:12px;
+	line-height:21px;
+}
+
+/* compare & quantity */
+.cat_blck-item-botter{
+	margin-top:15px;
+	margin-bottom:10px;
+}
+.cat_blck-item-botter-compare{
+	float:left;
+	padding-left:20px;
+	margin-right:20px;
+	background-position:0px 0px;
+	background-repeat:no-repeat;
+}
+.cat_blck-item-botter-compare a{
+	font-size:11px;
+	font-weight:bold;
+	border-bottom:1px dashed #008fd5;
+}
+.cat_blck-item-botter-compare a:hover{
+	text-decoration:none;
+	border-bottom:1px dashed white;
+}
+.cat_blck-item-botter-quantity{
+	font-size:11px;
+}
+.cat_blck-item-botter-quantity .propuct_quantity{
+	padding-left:20px;
+	background-position:0px 0px;
+	background-repeat:no-repeat;
+}
+.block_hidden{
+	position:absolute;
+	display:none;
+	width:249px;
+	top:-1px;
+	left:-1px;
+	border:1px solid #cecece;
+	background-color:white;
+	-moz-box-shadow: 0 0px 10px rgba(0,0,0,0.5);/* Р”Р»СЏ Firefox */
+	-webkit-box-shadow: 0 0px 10px rgba(0,0,0,0.5);/* Р”Р»СЏ Safari Рё Chrome */
+	box-shadow: 0 0px 10px rgba(0,0,0,0.5);/* РџР°СЂР°РјРµС‚СЂС‹ С‚РµРЅРё */
+	z-index:40;
+}

@@ -1,0 +1,209 @@
+.catalog_compare-table_head,
+.catalog_compare-table_items{
+	margin-top:15px;
+}
+
+/* table head */
+.catalog_compare-table_head{
+	float:left;
+	width:250px;
+}
+.catalog_compare-table_head td{
+	border:1px solid #cecece;
+}
+.catalog_compare-table_head-diffnodiff{
+	height:266px;
+	line-height:30px;
+}
+.catalog_compare-table_head-diffnodiff a{
+	text-decoration:none;
+	border-bottom:1px dashed #008fd5;
+}
+.catalog_compare-table_head-diffnodiff a:hover{
+	text-decoration:none;
+	border-bottom:1px dashed #f9f9f9;
+}
+.catalog_compare-table_head td.td_other_in_head{
+	font-size:13px;
+	background-color:#f9f9f9;
+}
+.catalog_compare-table_head td.td_other_in_head,
+.catalog_compare-table_head .header_repeat_1{
+	padding:8px 15px;
+}
+.catalog_compare-table_head .header_repeat_1{
+	font-weight:bold;
+	font-size:12px;
+	background-position:0px 0px;
+	background-repeat:repeat-x;
+}
+
+/* table items */
+.catalog_compare-table_items{
+	/*width:1000px;*/
+}
+.catalog_compare-table_items td{
+	width:218px;
+	border:1px solid #cecece;
+}
+.catalog_compare-table_items td.td_other_in_items{
+	font-size:13px;
+}
+.catalog_compare-table_items td.td_other_in_items,
+.catalog_compare-table_items .header_repeat_1{
+	padding:8px 15px;
+}
+.catalog_compare-table_items .header_repeat_1{
+	font-size:12px;
+	font-weight:bold;
+	background-position:0px 0px;
+	background-repeat:repeat-x;
+}
+.catalog_compare-table_items .product{
+	height:278px;
+}
+.catalog_compare-table_items td.best_property{
+	background-color:#ffe460;
+}
+.catalog_compare-table_items td.property{
+	text-align:center;
+	height:16px;
+}
+
+/* catalog_items */
+
+.catalog_compare-item-simple{ 
+
+width:248px;
+height:278px;
+ }
+ 
+ 
+ 
+
+
+
+.catalog_compare-item_inner{
+	padding:0px 16px;
+}
+.catalog_compare-item-name{
+	padding-top:15px;
+	height:36px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.catalog_compare-item-name a{
+	display:block;
+	width:219px;
+	font-size:15px;
+	font-weight:bold;
+	text-align:center;
+}
+.catalog_compare-item-picture{
+	width:219px;
+	height:175px;
+	text-align:center;
+	margin-top:10px;
+	margin-bottom:5px;
+	vertical-align:middle;
+	display:table-cell;
+}
+.catalog_compare-item-price{
+	width:219px;
+}
+.catalog_compare-item-price-buybtn{
+	float:right;
+}
+.add2basket_baton{
+	margin-top:11px;
+}
+.catalog_compare-item-price .old_price{
+	font-size:12px;
+	font-weight:bold;
+}
+
+/* other */
+.stop_wrap{
+	display:block;
+	width:218px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+
+/* scroll page */
+.around_catalog_compare-scroller{
+	position:relative;
+	float:left;
+	z-index:10;
+}
+.catalog_compare-scroller{
+	overflow:hidden;
+	outline:-webkit-focus-ring-color auto 0px;
+}
+.catalog_compare-scrollerContainer{
+	overflow:hidden;
+	position:relative;
+}
+.catalog_compare-scrollerInner{
+	position:absolute;
+	top:0px;
+	left:0px;
+	padding:0px;
+}
+.catalog_compare-scroller-prev,
+.catalog_compare-scroller-next{
+	position:absolute;
+	width:43px;
+	height:43px;
+	top:312px;
+	z-index:20;
+}
+.catalog_compare-scroller-aroundprev,
+.catalog_compare-scroller-aroundnext{
+	width:43px;
+	position:relative;
+}
+.catalog_compare-scroller-aroundprev{
+	float:left;
+}
+.catalog_compare-scroller-aroundnext{
+	float:right;
+}
+.catalog_compare-scroller-aroundbtns{
+
+}
+.catalog_compare-scroller-prev{
+	float:left;
+	background-image:url('../images/scroller_btns.png');
+	background-position:0px 0px;
+	background-repeat:no-repeat;
+}
+.catalog_compare-scroller-prev:hover{
+	background-position:-43px 0px;
+}
+.catalog_compare-scroller-next{
+	float:right;
+	background-image:url('../images/scroller_btns.png');
+	background-position:0px -43px;
+	background-repeat:no-repeat;
+}
+.catalog_compare-scroller-next:hover{
+	background-position:-43px -43px;
+}
+/* delete link */
+.catalog_compare-item-delete{
+	padding:11px;
+	text-align:right;
+}
+.catalog_compare-item-delete-delete_link{
+	display:block;
+	float:right;
+	width:15px;
+	height:14px;
+	text-decoration:none;
+	background:url('../images/delete.png') 0px 0px no-repeat;
+}
+.catalog_compare-item-delete-delete_link:hover{
+	opacity:0.4;
+}

@@ -1,0 +1,92 @@
+.personal_in_head_inner{
+	position:relative;
+}
+.personal_in_head_inner a.this_icon{
+	display:block;
+	width:40px;
+	height:60px;
+	float:left;
+	margin-right:8px;
+	text-decoration:none;
+	background-position:-16px 0px;
+	background-repeat:no-repeat;
+	margin-top:5px;
+}
+.personal_in_head_inner a.this_icon:hover{
+	background-position:-75px 0px;
+	text-decoration:none;
+}
+.personal_in_head_inner a.fancy_auth_form{
+	text-decoration:none;
+}
+.personal_in_head_inner a.fancy_auth_form:hover{
+	color:#ffc500;
+	text-decoration:underline;
+}
+.personal_in_head_inner a.lagaut{
+	text-decoration:none;
+}
+.personal_in_head_inner a.lagaut:hover{
+	text-decoration:underline;
+}
+
+.personal_in_head_inner .note{
+	font-weight:bold;
+	font-size:13px;
+	padding:16px 0px 3px 0px;
+}
+.personal_in_head_inner .links{
+	font-size:11px;
+	padding:4px 0px 3px 0px;/*padding:0px 0px 3px 0px;*/
+	overflow:hidden;
+}
+
+.personal_in_head_inner .logaut_popup{
+	position:absolute;
+	opacity:0;
+	display:none;/**/
+	width:218px;
+	height:195px;
+	top:-20px;
+	left:102;/*-28px*/
+	color:white;
+	background-image:url('img/bg.png');
+	background-position:8px 15px;
+	background-repeat:no-repeat;
+	z-index:350;
+}
+.personal_in_head_inner .logaut_popup_inner{
+	padding:33px 5px 5px 71px;
+}
+.personal_in_head_inner .logaut_popup .lagaut{
+	color:white;
+}
+.personal_in_head_inner .logaut_popup .note2{
+	font-weight:bold;
+	font-size:13px;
+	padding:3px 0px 3px 5px;
+}
+.personal_in_head_inner .logaut_popup .links2{
+	font-size:12px;
+	padding:4px 0px 3px 5px;
+	overflow:hidden;
+}
+.personal_in_head_inner a{
+	text-decoration:underline;
+}
+.personal_in_head_inner a:hover{
+	text-decoration:none;
+}
+.personal_in_head_inner .logaut_popup ul{
+	color:white;
+	list-style:none;
+	line-height:20px;
+	font-size:13px;
+	padding-left:5px;
+}
+.personal_in_head_inner .logaut_popup a{
+	color:white;
+}
+.personal_in_head_inner .logaut_popup ul a{
+	font-size:12px;
+}

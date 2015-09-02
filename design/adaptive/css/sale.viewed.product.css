@@ -1,0 +1,52 @@
+div.view-list {
+	border-top:0px;
+	width:248px;
+	height:298px;
+	border-top:1px solid #CECECE;
+	border-bottom:1px solid #CECECE;
+	border-left:1px solid #CECECE;
+	background-color:#FFFFFF;
+}
+div.view-header {
+	font-size:15px;
+	padding:9px 0;
+	font-weight:bold;
+	text-align:center;
+	text-transform:uppercase;
+	border-bottom:1px solid #CECECE;
+	border-top:0px;
+	background-position:0px 0px;
+	background-repeat:repeat-x;
+	
+}
+.view-item_inner{
+	width:200px;
+	float:left;
+	margin:15px 24px;
+}
+.viewed-image{
+	width:80px;
+	height:90px;
+	float:left;
+	margin-right:10px;
+	text-align:center;
+}
+.view-item-body{
+	float:left;
+	width:100px;
+	height:90px;
+	padding-top:10px;
+}
+.view-item-name{
+	width:105px;
+	height:50px;
+	line-height:22px;
+	font-size:14px;
+	overflow:hidden;
+}
+.view-line{
+	width:196px;
+	height:1px;
+	margin-left:25px;
+	background-color:#cecece;
+}

@@ -1,0 +1,148 @@
+/* Сброс стилей */
+#cssmenu > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+/* Контейнер меню */
+#cssmenu > ul {
+  display: block;
+  position: relative;
+  -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Для Firefox */ /* Для Safari и Chrome */ /* Параметры тени */
+}
+/* Элементы списка содержащие ссылки */
+#cssmenu > ul li {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+/* Основные стили ссылок */
+#cssmenu > ul li a {
+
+  /* Позиционирование */
+  
+
+  display: block;
+  
+
+  position: relative;
+  
+
+  margin: 0;
+  
+  
+  
+
+  padding: 3px 21px;
+
+  /* Типографика */
+  
+  
+
+  color: #292929;
+  
+
+  text-decoration: underline;
+  
+  
+
+  text-shadow: 0 1px 0 #fff;
+  
+  
+
+  /* Фон и эффекты */
+  
+  
+
+  background: url(../images/arrow_bg1.png) no-repeat;
+
+  background-position: 10px;
+
+  background-color: white;
+
+}
+/* Скругление углов первой ссылки меню и субменю */
+#cssmenu > ul li:first-child > a {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top: 0;
+}
+/* Скругление углов последней ссылки меню и субменю */
+#cssmenu > ul li:last-child > a {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom: 0;
+}
+/* Стили ссылок при наведении */
+#cssmenu > ul li a:hover,
+#cssmenu > ul li:hover > a {
+  background: -moz-linear-gradient(#3b7cff, #085aff);
+  border-color: transparent;
+  background-color: #E6E3E3;
+}
+/* Индикатор наличия субменю */
+#cssmenu > ul .has-sub > a::after {
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  width: 0px;
+  height: 0px;
+  /* Создаём стрелки используя свойство border */
+
+  border: 4px solid transparent;
+  border-left: 4px solid #292929;
+}
+/* Такая же стрелка, только темнее для создания эффекта тени */
+#cssmenu > ul .has-sub > a::before {
+  content: '';
+  position: absolute;
+  top: 17px;
+  right: 10px;
+  width: 0px;
+  height: 0px;
+  /* Создаём стрелку используя свойство border */
+
+  border: 4px solid transparent;
+  border-left: 4px solid #fff;
+}
+/* Меняем цвет стрелки при наведении курсора */
+#cssmenu > ul li > a:hover::after,
+#cssmenu > ul li:hover > a::after {
+  border-left: 4px solid #fff;
+}
+#cssmenu > ul li > a:hover::before,
+#cssmenu > ul li:hover > a::before {
+  border-left: 4px solid rgba(0, 0, 0, 0.25);
+}
+/* Субменю */
+#cssmenu > ul ul {
+  position: absolute;
+  min-width: 200px;
+  left: 100%;
+  top: -9999px;
+  padding-left: 0px;
+  opacity: 0;
+  -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Для Firefox */
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Для Safari и Chrome */
+  box-shadow: 0 0 3px rgba(0,0,0,0.5); /* Параметры тени */
+  /* Эффект затухания */
+
+  -webkit-transition: opacity 0.3s ease-in;
+  -moz-transition: opacity 0.3s ease-in;
+  transition: opacity 0.1s ease-in;
+}
+#cssmenu > ul ul li a {
+  font-size: 12px;
+}
+/* Показываем субменю при наведении курсора на родительскую ссылку */
+#cssmenu > ul li:hover > ul {
+  top: 0px;
+  opacity: 1;
+  z-index: 1000;
+}

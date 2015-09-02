@@ -1,0 +1,178 @@
+/*
+* CSS Styles that are needed by jScrollPane for it to operate correctly.
+*
+* Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+* may not operate correctly without them.
+*/
+
+.zoomThumbActive img{
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+	-moz-opacity:0.3;
+	-khtml-opacity:0.3;
+	opacity:0.3;
+}
+
+.around_catalog_detail-scroll-pane,
+.around_catalog_detail-scroll-pane-noneed{
+	float:left;
+}
+.around_catalog_detail-scroll-pane-noneed{
+	padding-top:11px;
+}
+.catalog_detail-scroll-pane{
+	width:100px;
+	height:240px;
+	overflow:auto;
+	outline:-webkit-focus-ring-color auto 0px;
+}
+.around_catalog_detail-scroll-pane .catalog_detail-scroll-pane-prev,
+.around_catalog_detail-scroll-pane .catalog_detail-scroll-pane-next{
+	width:17px;
+	height:11px;
+	display:block;
+	margin-left:37px;
+}
+.around_catalog_detail-scroll-pane .catalog_detail-scroll-pane-prev{
+	background-image:url("img/arrows.png");
+	background-repeat:no-repeat;
+	background-position:0px -33px;
+}
+.around_catalog_detail-scroll-pane .catalog_detail-scroll-pane-prev:hover{
+	background-position:0px -22px;
+}
+.around_catalog_detail-scroll-pane .catalog_detail-scroll-pane-next{
+	background-image:url("img/arrows.png");
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+}
+.around_catalog_detail-scroll-pane .catalog_detail-scroll-pane-next:hover{
+	background-position:0px -11px;
+}
+.catalog_detail-scroll-pane-image{
+	display:table;
+	width:90px;
+	height:80px;
+	text-align:center;
+}
+.catalog_detail-scroll-pane-image a{
+	display:table-cell;
+	vertical-align:middle;
+}
+
+ 
+ 
+ 
+.jspContainer
+{
+	overflow: hidden;
+	position: relative;
+}
+
+.jspPane
+{
+	position: absolute;
+}
+
+.jspVerticalBar
+{
+	display:none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 16px;
+	height: 100%;
+	background: red;
+}
+
+.jspHorizontalBar
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 16px;
+	background: red;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar *
+{
+	margin: 0;
+	padding: 0;
+}
+
+.jspCap
+{
+	display: none;
+}
+
+.jspHorizontalBar .jspCap
+{
+	float: left;
+}
+
+.jspTrack
+{
+	background: #dde;
+	position: relative;
+}
+
+.jspDrag
+{
+	background: #bbd;
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+	float: left;
+	height: 100%;
+}
+
+.jspArrow
+{
+	background: #50506d;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+}
+
+.jspArrow.jspDisabled
+{
+	cursor: default;
+	background: #80808d;
+}
+
+.jspVerticalBar .jspArrow
+{
+	height: 16px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+	width: 16px;
+	float: left;
+	height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus
+{
+	outline: none;
+}
+
+.jspCorner
+{
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+{
+	margin: 0 -3px 0 0;
+}

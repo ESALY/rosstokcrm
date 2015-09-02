@@ -1,0 +1,22 @@
+.catalog_section_list{
+	width:227px;
+	border:1px solid #CECECE;
+	margin-right:20px;
+	margin-bottom:20px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+}
+.catalog_section_list-inner{
+	padding:16px 19px 16px 19px;
+}
+.catalog_section_list-inner span.tochka,
+.catalog_section_list-link{
+	display:block;
+	float:left;
+	line-height:20px;
+}
+.catalog_section_list-link{
+	width:168px;
+	font-size:12px;
+}

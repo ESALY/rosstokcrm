@@ -1,0 +1,126 @@
+.mainbigbanner{
+	width:100%;
+	height:367px;
+}
+
+.mainbigbanner-slider{
+	position:relative;
+	width:100%;
+	height:367px;
+	overflow:hidden;
+}
+.mainbigbanner-slider-list{
+	width:100%;
+	height:367px;
+	white-space:nowrap;
+	position:absolute;
+}
+.mainbigbanner-slider-item{
+	display:inline-block;
+	width:100%;
+	height:367px;
+	border:0px;
+	overflow:hidden;
+	margin:0;padding:0;
+}
+
+.mainbigbanner-slider-item_inner{
+	position:relative;
+	width:100%;
+	height:367px;
+	background-position:0px 0px;
+	background-repeat:no-repeat;
+}
+.mainbigbanner-slider-item-name,
+.mainbigbanner-slider-item-line,
+.mainbigbanner-slider-item-text,
+.mainbigbanner-slider-item-price,
+.mainbigbanner-slider-item-link,
+.mainbigbanner-slider-list-pointers{
+	position:absolute;
+}
+.mainbigbanner-slider-item-name{
+	top:60px;
+	right:20px;
+	left:422px;
+	font-size:25px;
+	font-weight:bold;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.mainbigbanner-slider-item-name a:hover{
+	text-decoration:none;
+}
+.mainbigbanner-slider-item-line{
+	top:100px;
+	left:422px;
+	width:45px;
+	height:3px;
+	background-color:#438ab9;
+}
+.mainbigbanner-slider-item-text{
+	font-size:13px;
+	right:20px;
+	top:115px;
+	left:422px;
+	height:135px;
+	overflow:hidden;
+	line-height:26px;
+	white-space:normal;
+	text-overflow:ellipsis;
+}
+.mainbigbanner-slider-item-price{
+	right:20px;
+	top:260px;
+	left:422px;
+}
+.mainbigbanner-slider-item-price .new_price{
+	display:block;
+	float:left;
+	width:185px;
+	height:43px;
+	font-size:26px;
+	text-align:center;
+	font-weight:bold;
+	padding-top:5px;
+	background:url('../images/bg_price.png') 0px 0px no-repeat;
+}
+.mainbigbanner-slider-item-price .old_price{
+	display:block;
+	float:left;
+	margin-left:10px;
+	margin-top:14px;
+}
+.mainbigbanner-slider-item-onlybanner{
+	display:block;
+	width:100%;
+	height:367px;
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+}
+.mainbigbanner-slider-item-link{
+	display:block;
+	width:100%;
+	height:367px;
+	top:0px;
+	left:0px;
+	z-index:20;
+}
+.mainbigbanner-slider-list-pointers{
+	bottom:18px;
+	right:22px;
+	white-space:nowrap;
+	z-index:25;
+}
+.mainbigbanner-slider-list-pointers a{
+	display:inline-block;
+	width:22px;
+	height:21px;
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+	background-image:url('../images/slider-icon.png');
+}
+.mainbigbanner-slider-list-pointers a.active{
+	background-image:url('../images/slider-icon-active.png') !important;
+}

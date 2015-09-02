@@ -1,0 +1,57 @@
+.bimg{
+    background: wheat;
+
+    width: 300px;
+}
+
+.js-hover-zoom {
+    position: absolute;
+}
+
+.js-orig-img {
+width: auto;
+height: auto;
+float: left;
+}
+
+.js-cursor-orig-overlay {
+    background: #000;
+    opacity: .5;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+}
+
+.js-cursor-zoom-box {
+display: none;
+background: #fff;
+opacity: 0.5;
+border: 1px solid #606060;
+position: absolute;
+float: left;
+width: 100px;
+height: 100px;
+cursor: move;
+}
+
+.js-large-img {
+background: #fff;
+width: 500px;
+height: 500px;
+position: absolute;
+float:left;
+display: none;
+overflow:hidden;
+margin-left: 360px;
+border: 1px solid yellow;
+}
+
+.js-large-img-inner {
+position: absolute;
+}
+
+#bounded_box {
+width: auto;
+height: auto;
+}

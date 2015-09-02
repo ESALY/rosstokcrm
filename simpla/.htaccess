@@ -1,0 +1,5 @@
+AddType application/octet-stream csv
+AuthName "Simpla CMS"
+AuthType Basic
+AuthUserFile /home/v/vdmgrup/rostokgroup.ru/public_html/simpla/.passwd
+require valid-user
