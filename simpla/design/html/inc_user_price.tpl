@@ -1,6 +1,4 @@
 <div class="user_price_wrapper">
-777
-<a class="btn btn-primary announce" data-toggle="modal" data-id="107" >Announce</a>
        <!--*****************************************************************************************************************************************************************-->
                              <div style="display: inline-block;
   width: 100%;
@@ -132,9 +130,9 @@
   box-sizing: border-box;
   background: whitesmoke;
 ">
-<div class="user-price-cimage">
+{*<div class="user-price-cimage">
     <img src="{$config->root_url}/{$config->categories_images_dir}{$c->image}" style="width: 200px";>
-</div>
+</div>*}
 {*  таблица *}
 <table class="pure-table pure-table-bordered" style="width:auto;">
     <thead>
@@ -146,7 +144,7 @@
             <th>закупка</th>
             <th style="width: 140px;">цена клиента</th>
             <th style="width: 140px;">цена утв.</th>
-            <th style="width: 50px;">заказ</th>
+            {*<th style="width: 50px;">заказ</th>*}
              <th>заказ</th>
         </tr>
     </thead>
@@ -179,7 +177,7 @@
                 <i class="pointer fa fa-paper-plane" onclick="sendutvprice (this,{$product->id},{$user->id},'utverzhdennaja_cena')"></i>
                 </div>
             </td>
-            <td>
+            {*<td>
             {if $product->iorders}
 
                   {foreach $product->iorders as $item}
@@ -200,7 +198,7 @@
                 {else}
                 <span>не заказано</span>
             {/if}
-            </td>
+            </td>*}
             <td>
             <ul id="tobasket{$product->id}" class="up-basket">
             <li><div class="b-input"><input placeholder="кол-во"/></div></li>
@@ -977,29 +975,7 @@ function status(el, productid, userid, rowtype) {
                         success: function(msg) {
 
                             //$(el).removeClass('loading_icon');
-                            //alert('Заказ добавлен!');
-
-                            //отправляем уведомлялку
-                            var str = '';
-                            str += 'Новый заказ в отдел закупок:';
-                            str += "\n\n";
-                            str += 'Менеджер:' + author;
-                            str += "\n";
-                            str += 'Покупатель:' + username;
-                            str += "\n";
-                            str += 'Товар: ' + prodname;
-                            str += "\n";
-                            str += 'Количество: ' + amount;
-                            str += "\n";
-                            str += 'Срок исполнения: ' + srokispol;
-                            str += "\n";
-                            str += 'Цена продажи: ' + tsenaprod;
-                            str += "\n";
-                            str += 'Комментарий: ' + commentariy;
-                            str += "\n\n";
-                            str += 'Перейти: ' + 'http://rosstok.ru/simpla/index.php?module=SupplysAdmin&status=new&productid=' + productid;
-
-                            telegramnoty(str);
+                            alert('Заказ добавлен!');
                         },
                         dataType: 'json'
                     });
@@ -1010,36 +986,6 @@ function status(el, productid, userid, rowtype) {
 </script>
 {/literal}
 
-{literal}
-<script>
-function telegramnoty(message) {
-$.ajax({
-                            url: "https://notifygram.org/api/v1",
-                            type: "POST",
-                            dataType: "json",
-                            crossDomaint: true,
-                            data: {
-                                api_key: "eny3pr11s56xtau7n8p0zaa9z5h5pptd",
-                                api_token: "12f6742306f4e884dac4717a1c37301a",
-                                show_project_name: 0,
-                                message: message
-                            },
-                            cache: false,
-                            success: function() {
-                                // Your code to handle success message sent
-                                //alert ("Сообщение отправлено!");
-                            },
-                            error: function(error) {
-                                // Your code to handle error
-                                //alert (JSON.stringify(error));
-                            }
-                        });
-
-return false;
-
-}
-</script>
-{/literal}
 {literal}
 <script>`
     function tozapros(el, id, prodname) {
