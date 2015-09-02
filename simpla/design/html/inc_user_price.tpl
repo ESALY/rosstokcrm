@@ -36,12 +36,7 @@
 
                              <a  class="button button-flat button-tiny {if $smarty.cookies.view == 'nein'}button button-flat button-primary{/if}" onclick="document.cookie='view=nein;path=/';document.location.reload();" href="{url module=UserAdmin id=$user->id filter=nein page=all}"><i class="fa fa-user"></i><i class="fa fa-filter"></i> Не интересно</a>
 
-                            <div class="right">
-                            <a  class="button button-flat button-tiny {if $sort=='nameASC'} button-highlight{/if}" onclick="document.location.reload();" href="{url module=UserAdmin sort=nameASC}"><i class="fa fa-sort-alpha-asc"></i></a>
-                            <a  class="button button-flat button-tiny {if $sort=='nameDESC'} button-highlight{/if}" onclick="document.location.reload();" href="{url module=UserAdmin sort=nameDESC}"><i class="fa fa-sort-alpha-desc"></i></a>
-                            <a  class="button button-flat button-tiny {if $sort=='position'} button-highlight{/if}" onclick="document.location.reload();" href="{url module=UserAdmin sort=position}"><i class="fa fa-sort-amount-desc"></i></a>
-                            <a  class="button button-flat button-tiny" onclick="document.location.reload();" href="javascript:;"><i class="fa fa-refresh"></i></a>
-                            </div>
+
 
 
                                                         <div style="float:right;margin-right: 30px;">
@@ -100,9 +95,23 @@
                     <!--Правый блок-->
                     <div class="main-right">
                                                 {* Поиск *}
-    <div style="margin-bottom: 13px;">
-    <input id="search-box" placeholder="Поиск..." style="padding: 5px;width: 430px;margin-right: 10px;">
-    <div class="button button-flat">поиск</div>
+    <div style="margin-bottom: 13px;display: inline-block;width: 100%;">
+    <form method="get" style="width: 650px;float: left;">
+<div id="search">
+    <input type="hidden" name="module" value='UserAdmin'>
+    <input type="hidden" name="id" value='{$user->id}'>
+    <input class="search" type="text" name="keyword" value="{$keyword|escape}" />
+    <input class="button button-flat" style="margin-left:10px;" type="submit" value="поиск"/>
+</div>
+</form>
+
+                            <div class="right">
+                            <a  class="button button-flat button-tiny {if $sort=='nameASC'} button-highlight{/if}" onclick="document.location.reload();" href="{url module=UserAdmin sort=nameASC}"><i class="fa fa-sort-alpha-asc"></i></a>
+                            <a  class="button button-flat button-tiny {if $sort=='nameDESC'} button-highlight{/if}" onclick="document.location.reload();" href="{url module=UserAdmin sort=nameDESC}"><i class="fa fa-sort-alpha-desc"></i></a>
+                            <a  class="button button-flat button-tiny {if $sort=='position'} button-highlight{/if}" onclick="document.location.reload();" href="{url module=UserAdmin sort=position}"><i class="fa fa-sort-amount-desc"></i></a>
+                            <a  class="button button-flat button-tiny" onclick="document.location.reload();" href="javascript:;"><i class="fa fa-refresh"></i></a>
+                            </div>
+
     </div>
     {*поиск @*}
 
