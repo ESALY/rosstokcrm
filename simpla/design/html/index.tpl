@@ -104,20 +104,18 @@ $(function () {
     {* информация *}
     <li><span style="
     color: white;
-    font-size: 12px;
+    font-size: 15px;
     margin-left: 10px;
     margin-top: 10px;
     display: inline-block;
 ">Последнее обновление: -- --</span></li>
-    <li><span style="
-color: white;
-    margin-top: 5px;
+    <li><span id="rates" style="
+    color: white;
+    font-size: 15px;
     margin-left: 10px;
+    margin-top: 10px;
     display: inline-block;
-    border: 1px solid white;
-    padding: 5px;
-    border-radius: 5px;
-"><i class="fa fa-university"></i> <span  id="rates" >Обновляю..</span></span></li>
+">Курсы валют: -- --</span></li>
     {*<li><a href="#">Likes</a></li>*}
     {*<li><a href="#">Views</a>
         <ul>
@@ -400,28 +398,26 @@ $(function() {
 
 {literal}
 <script>
-//Получаем текущие валюты
-get_corrency();
-        function get_corrency() {
-
-        //Ajax запрос в базу данных
-    $.ajax({
-        type: 'POST',
-        url: 'ajax/get_corrency.php',
-        data: {
-            'id': 1,
-        },
-        //если все удачно возвращаем message
-        success: function (data) {
-            //alert (JSON.stringify(data));
-            $("#rates").html('Курс по ЦБРФ: '+data[0].key+data[0].val+' '+data[1].key+data[1].val);
-        },
-
-        dataType: 'json'
+//курсы валют
+var curCodes = ['RUB', 'USD', 'EUR'];
+$(document).ready(function() {
+    $.get('getrates.php', function(data) {
+        if (data != 'ERR') {
+            var rates = '';
+            $(data).find('Valute').each(function(key, value) {
+                var curCode = $(value).find('CharCode').html();
+                if (-1 != $.inArray(curCode, curCodes)) {
+                    rates += '<li>' + $(value).find('Nominal').html()
+                        + ' ' + curCode
+                        + ' = ' + $(value).find('Value').html() + ' грн.' + '</li>';
+                }
+                $('#rates').html(rates);
+            });
+        }
+        else {
+            $('#rates').html('<li>Данные не доступны</li>');
+        }
     });
-
-    return false;
-
-    }
+});
 </script>
 {/literal}
