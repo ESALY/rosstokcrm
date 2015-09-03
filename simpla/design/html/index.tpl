@@ -88,7 +88,7 @@ $(function () {
 
     <li><a href="index.php">ROSSTOK ({$m->login|escape})</a></li>
     {*<li><a  href="index.php?module=FeedAdmin">Лента</a></li>*}
-    {*<li><a  href="index.php?module=ProductsAdmin">Каталог</a></li>*}
+    <li><a  href="index.php?module=ProductsAdmin">Каталог</a></li>
     <li><a  href="index.php?module=UsersAdmin">Покупатели</a></li>
     <li><a  href="{url module=SupplysAdmin status=new productid=null isupplier=null}">Закупки</a></li>
     <li><a  href="index.php?module=DocsAdmin">Документы</a></li>

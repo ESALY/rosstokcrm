@@ -984,7 +984,11 @@ function status(el, productid, userid, rowtype) {
                         success: function(msg) {
 
                             //$(el).removeClass('loading_icon');
-                            alert('Заказ добавлен!');
+                            //alert('Заказ добавлен!');
+
+                var n = noty({
+                    text: 'Заказ добавлен!'
+                });
                         },
                         dataType: 'json'
                     });
