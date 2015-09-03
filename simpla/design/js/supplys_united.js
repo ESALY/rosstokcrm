@@ -250,27 +250,7 @@ get_supplys();
 
     }
 
-    //Получаем текущие валюты
-        function get_corrency() {
 
-        //Ajax запрос в базу данных
-    $.ajax({
-        type: 'POST',
-        url: 'ajax/get_corrency.php',
-        data: {
-            'id': 1,
-        },
-        //если все удачно возвращаем message
-        success: function (data) {
-            alert (JSON.stringify(data));
-        },
-
-        dataType: 'json'
-    });
-
-    return false;
-
-    }
 
 //Поставщики
 function supplys_json_render(items){

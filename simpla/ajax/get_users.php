@@ -1,52 +1,28 @@
 <?php
 
-	require_once('../../api/Simpla.php');
-	$simpla = new Simpla();
+	require_once('ratescache.php');
 
-	//$values = $simpla->request->post('values');
+$rCache = new RatesCache();
+//$rCache->expired = 30;
 
-	$filter = array();
+//пробуем получить данные из кеша
+if (FALSE === ($data = $rCache->get())) {
+    //если данные в кеше устарели, пытаемся получить их от сервера pfsoft.com.ua
+    $data = @file_get_contents('http://pfsoft.com.ua/service/currency/');
+    //если сервер недоступен, пробуем получить данные из устаревшего кеша
+    if (FALSE === $data) {
+        $data = $rCache->get(TRUE);
+    }
+    else {
+        //обновляем данные в кеше, предварительно изменяем кодировку на UTF-8
+        $rCache->save(iconv('windows-1251','utf-8',$data));
+    }
+}
 
-	//$filter['keyword'] = $simpla->request->post('keyword', 'string');
-	//$filter['manager'] = $simpla->request->post('manager', 'string');
-	//$filter['gorod'] = $simpla->request->post('gorod', 'string');
-	//$filter['limit'] = 20;
-
-	$limit = $simpla->request->post('limit', 'string');
-
-	if(!empty($limit))
-	{
-		$filter['limit'] = $simpla->request->post('limit', 'string');
-	}
-
-	$keyword = $simpla->request->post('keyword', 'string');
-
-	if(!empty($keyword))
-	{
-		$filter['keyword'] = $simpla->request->post('keyword', 'string');
-	}
-
-	$manager = $simpla->request->post('manager', 'string');
-
-	if(!empty($manager))
-	{
-		$filter['manager'] = $simpla->request->post('manager', 'string');
-	}
-
-	$gorod = $simpla->request->post('gorod', 'string');
-
-	if(!empty($gorod))
-	{
-		$filter['gorod'] = $simpla->request->post('gorod', 'string');
-	}
-
-	$users = $simpla->users->get_users($filter);
-
-	$category_id = $simpla->request->get('category_id', 'integer');
-	$product_id = $simpla->request->get('product_id', 'integer');
-
-	header("Content-type: application/json; charset=UTF-8");
-	header("Cache-Control: must-revalidate");
-	header("Pragma: no-cache");
-	header("Expires: -1");
-	print json_encode($users);
+if (FALSE !== $data) {
+    //отправляем данные
+    echo $data;
+    exit;
+}
+//отправляем сообщение об ошибке
+echo 'ERR';
