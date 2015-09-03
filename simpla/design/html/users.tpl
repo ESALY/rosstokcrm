@@ -75,6 +75,7 @@
 
 
     <div class="pure-u-1-2" id="content">
+    <div style="margin-top:20px;" class="wrapshadow">
 {if $keyword && $users_count>0}
     <h1>{$users_count|plural:'Нашелся':'Нашлось':'Нашлись'} {$users_count} {$users_count|plural:'покупатель':'покупателей':'покупателя'} <a class="button button-rounded button-flat" href="{url module=UserAdmin}">Добавить</a></h1>
     {elseif $users_count>0}
@@ -101,6 +102,7 @@
 
 <div id="users_ajax" class="users-ajax-table-wrapper"></div>
 
+ </div>
  </div>
 
  <div class="pure-u-1-4">

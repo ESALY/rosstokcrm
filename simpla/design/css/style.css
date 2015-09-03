@@ -2030,8 +2030,8 @@ width: 100%;
 #main_list {
 	margin-top: 10px;
 	display: block;
-	width: 100%;
 	overflow: hidden;
+	width: 650px;
 }
 /* @end */
 
@@ -3262,4 +3262,13 @@ outline: 0;
 display: inline-block;
 float: left;
 margin-right: 10px;
+}
+
+.wrapshadow{
+    background: #fff;
+    color: #000;
+    border-radius: 2px;
+    padding: 10px 16px;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,.3);
 }
