@@ -216,6 +216,7 @@
             <li><div class="b-input"><input placeholder="комментарий"/></div></li>
             <li><a class="button button-rounded button-flat button-tiny" href="#" onclick="tobasket (this,{$product->id},'{$product->name}','z')">запрос цены</a></li>
             <li><a class="button button-rounded button-flat button-tiny" href="#" onclick="tobasket (this,{$product->id},'{$product->name}','new')">заказать</a></li>
+            <li><a class="button button-rounded button-flat button-tiny" href="#" onclick="makeiorder (this,{$product->id},'{$product->name}','new')">i order test</a></li>
             </ul>
             </td>
         </tr>
@@ -939,7 +940,6 @@ function status(el, productid, userid, rowtype) {
 }
 </script>
  {/literal}
-
 
 <!--Корзина-->
 {literal}

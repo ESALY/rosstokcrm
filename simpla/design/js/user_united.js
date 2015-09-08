@@ -1,6 +1,28 @@
 //Функция для отправки выделенных строк в заказ
 
 
+//Добавляем заказ в таблицу internal orders
+function makeiorder(el, id, prodname, status) {
+    //alert  (777);
+    var productid = id;
+    var id = 'tobasket' + id;
+
+    var amount = document.getElementById(id).getElementsByTagName('input')[0].value;
+
+    var srokispol = document.getElementById(id).getElementsByTagName('input')[1].value;
+    var tsenaprod = document.getElementById(id).getElementsByTagName('input')[2].value;
+    var commentariy = document.getElementById(id).getElementsByTagName('input')[3].value;
+
+    alert  (amount);
+    alert  (srokispol);
+    alert  (tsenaprod);
+    alert  (commentariy);
+
+    //var author = '{/literal}{$m->login|escape}{literal}';
+
+    //var username = '{/literal}{$user->name}{literal}';
+}
+
 function getproduct() {
     alert  (777);
 }

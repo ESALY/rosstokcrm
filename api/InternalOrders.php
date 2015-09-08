@@ -147,14 +147,16 @@ class Orders extends Simpla
 		}
 	}
 
-	public function add_order($order)
+	//Добавляем внутренний заказ
+
+	public function add_iorder($order)
 	{
 		$order = (object)$order;
 		$order->url = md5(uniqid($this->config->salt, true));
 		$set_curr_date = '';
 		if(empty($order->date))
 			$set_curr_date = ', date=now()';
-		$query = $this->db->placehold("INSERT INTO __orders SET ?%$set_curr_date", $order);
+		$query = $this->db->placehold("INSERT INTO __internal_orders SET ?%$set_curr_date", $order);
 		$this->db->query($query);
 		$id = $this->db->insert_id();
 		return $id;
